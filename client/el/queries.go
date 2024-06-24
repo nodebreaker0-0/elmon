@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/utils"
 )
 
 func jsonRPCQuery(ctx context.Context, host string, method string, params []string) (*JSONRPCResponse, error) {

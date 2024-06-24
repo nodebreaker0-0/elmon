@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/utils"
 )
 
 func NewBaseApp(cfg *Config) *BaseApp {

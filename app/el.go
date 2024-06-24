@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"bharvest.io/beramon/client/el"
-	"bharvest.io/beramon/store"
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/client/el"
+	"bharvest.io/elmon/store"
+	"bharvest.io/elmon/utils"
 )
 
 func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {

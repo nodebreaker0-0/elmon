@@ -1,4 +1,4 @@
-module bharvest.io/beramon
+module bharvest.io/elmon
 
 go 1.22.3
 

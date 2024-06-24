@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"bharvest.io/beramon/app"
-	"bharvest.io/beramon/server"
-	"bharvest.io/beramon/store"
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/app"
+	"bharvest.io/elmon/server"
+	"bharvest.io/elmon/store"
+	"bharvest.io/elmon/utils"
 	"github.com/pelletier/go-toml/v2"
 )
 

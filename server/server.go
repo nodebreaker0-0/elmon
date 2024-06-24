@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"bharvest.io/beramon/store"
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/store"
+	"bharvest.io/elmon/utils"
 )
 
 func Run(listenPort int) {

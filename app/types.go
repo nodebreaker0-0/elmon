@@ -1,7 +1,7 @@
 package app
 
 import (
-	"bharvest.io/beramon/utils"
+	"bharvest.io/elmon/utils"
 )
 
 type Config struct {
