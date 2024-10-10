@@ -74,7 +74,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		store.GlobalState.ELs[jsonrpc].CurrentHeight = height
 	}()
 
-	// Check Peer Count
+	/* Check Peer Count
 	go func() {
 		defer wg.Done()
 
@@ -119,7 +119,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			return
 		}
 	}()
-
+	*/
 	wg.Wait()
 
 	utils.Debug(fmt.Sprintf("Finish check EL for %s and Elapsed Time: %s", jsonrpc, time.Since(now)))

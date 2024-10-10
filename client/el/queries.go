@@ -72,7 +72,7 @@ func (c *Client) GetLatestBlock(ctx context.Context) (uint64, error) {
 		return 0, err
 	}
 
-	height := string(resp.Result[3:len(resp.Result)-1])
+	height := string(resp.Result[3 : len(resp.Result)-1])
 
 	result, err := strconv.ParseUint(height, 16, 64)
 	if err != nil {
@@ -82,6 +82,7 @@ func (c *Client) GetLatestBlock(ctx context.Context) (uint64, error) {
 	return result, nil
 }
 
+/*
 func (c *Client) GetPeerCnt(ctx context.Context) (uint64, error) {
 	resp, err := jsonRPCQuery(ctx, c.host, "net_peerCount", []string{})
 	if err != nil {
@@ -97,7 +98,8 @@ func (c *Client) GetPeerCnt(ctx context.Context) (uint64, error) {
 
 	return result, nil
 }
-
+*/
+/*
 func (c *Client) GetTxQueuedCnt(ctx context.Context) (int, error) {
 	resp, err := jsonRPCQuery(ctx, c.host, "txpool_content", []string{})
 	if err != nil {
@@ -112,3 +114,4 @@ func (c *Client) GetTxQueuedCnt(ctx context.Context) (int, error) {
 
 	return len(result.Queued), nil
 }
+*/
