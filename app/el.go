@@ -23,7 +23,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 	defer cancel()
 
 	wg := sync.WaitGroup{}
-	wg.Add(4)
+	wg.Add(2)
 
 	client, err := el.New(jsonrpc)
 	if err != nil {

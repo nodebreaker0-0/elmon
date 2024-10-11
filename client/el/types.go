@@ -10,10 +10,10 @@ type Client struct {
 
 type (
 	JSONRPCRequest struct {
-		JSONRPC string      `json:"jsonrpc"`
-		Method  string      `json:"method"`
-		Params  []string    `json:"params"`
-		ID      int         `json:"id"`
+		JSONRPC string   `json:"jsonrpc"`
+		Method  string   `json:"method"`
+		Params  []string `json:"params"`
+		ID      int      `json:"id"`
 	}
 
 	JSONRPCResponse struct {
@@ -28,7 +28,9 @@ type (
 	}
 )
 
+/*
 type TxpoolContentResponse struct {
 	Pending map[string]any `json:"pending"`
 	Queued map[string]any `json:"queued"`
 }
+*/
