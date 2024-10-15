@@ -29,7 +29,7 @@ func main() {
 		return
 	}
 
-	tgTitle := fmt.Sprintf("🤖 elmon 🤖")
+	tgTitle := fmt.Sprintf("🤖 Monad elmon 🤖")
 	utils.SetTg(cfg.Tg.Enable, tgTitle, cfg.Tg.Token, cfg.Tg.ChatID)
 
 	// Init JsonRPCList & memory store
