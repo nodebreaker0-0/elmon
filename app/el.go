@@ -67,7 +67,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			return
 		}
 
-		if height == height {
+		if store.GlobalState.ELs[jsonrpc].CurrentHeight == height {
 			store.GlobalState.ELs[jsonrpc].Status = false
 
 			msg := "Monad Height is not increasing"
