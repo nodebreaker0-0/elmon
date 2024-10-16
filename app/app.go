@@ -28,6 +28,7 @@ func (app *BaseApp) Run(ctx context.Context) {
 			err := app.checkEL(appCtx, jsonrpc)
 			if err != nil {
 				utils.SendTg(err.Error())
+				utils.SendPd(err.Error())
 				utils.Error(err, true)
 				return
 			}

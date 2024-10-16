@@ -10,6 +10,7 @@ type Config struct {
 		Period        uint `toml:"period"`
 	} `toml:"general"`
 	Tg utils.TgConfig `toml:"tg"`
+	Pd utils.PdConfig `toml:"pd"`
 	EL struct {
 		JsonRPCs string `toml:"json_rpcs"`
 		//PeerThreshold         uint64 `toml:"peer_threshold"`
