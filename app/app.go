@@ -29,6 +29,7 @@ func (app *BaseApp) Run(ctx context.Context) {
 			if err != nil {
 				utils.SendTg(err.Error())
 				utils.SendPd(err.Error())
+				utils.SendSl(err.Error())
 				utils.Error(err, true)
 				return
 			}

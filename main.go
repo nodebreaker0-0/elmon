@@ -32,6 +32,7 @@ func main() {
 	tgTitle := fmt.Sprintf("🤖 Monad elmon 🤖")
 	utils.SetTg(cfg.Tg.Enable, tgTitle, cfg.Tg.Token, cfg.Tg.ChatID)
 	utils.SetPd(cfg.Pd.Enable, cfg.Pd.RoutingKey, cfg.Pd.EventAction, cfg.Pd.Payload.Severity, cfg.Pd.Payload.Source)
+	utils.SetSl(cfg.Sl.Enable, cfg.Sl.WebhookURL)
 
 	// Init JsonRPCList & memory store
 	cfg.EL.JsonRPCList = strings.Split(cfg.EL.JsonRPCs, ",")

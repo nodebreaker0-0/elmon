@@ -17,3 +17,8 @@ type PdpConfig struct {
 	Severity string `toml:"severity"`
 	Source   string `toml:"source"`
 }
+
+type SlConfig struct {
+	Enable     bool   `toml:"enable"`
+	WebhookURL string `toml:"webhookURL"`
+}

@@ -38,6 +38,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if err != nil {
 			utils.SendTg(err.Error())
 			utils.SendPd(err.Error())
+			utils.SendSl(err.Error())
 			utils.Error(err, true)
 			return
 		}
@@ -49,6 +50,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			msg := "Monad EL Node is syncing"
 			utils.SendTg(msg)
 			utils.SendPd(msg)
+			utils.SendSl(msg)
 			utils.Error(errors.New(msg), false)
 
 			return
@@ -63,6 +65,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if err != nil {
 			utils.SendTg(err.Error())
 			utils.SendPd(err.Error())
+			utils.SendSl(err.Error())
 			utils.Error(err, true)
 			return
 		}
@@ -73,6 +76,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			msg := "Monad Height is not increasing"
 			utils.SendTg(msg)
 			utils.SendPd(msg)
+			utils.SendSl(msg)
 			utils.Error(errors.New(msg), false)
 		}
 		store.GlobalState.ELs[jsonrpc].CurrentHeight = height
@@ -86,6 +90,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if err != nil {
 			utils.SendTg(err.Error())
 			utils.SendPd(err.Error())
+			utils.SendSl(err.Error())
 			utils.Error(err, true)
 			return
 		}
@@ -97,6 +102,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			msg := fmt.Sprintf("EL Node has low peers: %d", peers)
 			utils.SendTg(msg)
 			utils.SendPd(msg)
+			utils.SendSl(msg)
 			utils.Error(errors.New(msg), false)
 
 			return
@@ -111,6 +117,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if err != nil {
 			utils.SendTg(err.Error())
 			utils.SendPd(err.Error())
+			utils.SendSl(err.Error())
 			utils.Error(err, true)
 			return
 		}
@@ -122,6 +129,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 			msg := fmt.Sprintf("Txpool Queued is too high: %d", cnt)
 			utils.SendTg(msg)
 			utils.SendPd(msg)
+			utils.SendSl(msg)
 			utils.Error(errors.New(msg), false)
 
 			return
