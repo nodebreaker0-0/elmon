@@ -52,7 +52,7 @@ func SendSl(msg string) {
 		return
 	}
 
-	msg = fmt.Sprintf("%s\n%s", "monad-v", msg)
+	msg = fmt.Sprintf("%s\n%s", "Story-v", msg)
 
 	slm := SlackMessage{
 		msg,

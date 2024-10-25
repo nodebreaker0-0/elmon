@@ -29,7 +29,7 @@ func main() {
 		return
 	}
 
-	tgTitle := fmt.Sprintf("🤖 Monad elmon 🤖")
+	tgTitle := fmt.Sprintf("🤖 Story elmon 🤖")
 	utils.SetTg(cfg.Tg.Enable, tgTitle, cfg.Tg.Token, cfg.Tg.ChatID)
 	utils.SetPd(cfg.Pd.Enable, cfg.Pd.RoutingKey, cfg.Pd.EventAction, cfg.Pd.Payload.Severity, cfg.Pd.Payload.Source)
 	utils.SetSl(cfg.Sl.Enable, cfg.Sl.WebhookURL)

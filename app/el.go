@@ -47,7 +47,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if isSyncing {
 			store.GlobalState.ELs[jsonrpc].Status = false
 
-			msg := "Monad EL Node is syncing"
+			msg := "Story EL Node is syncing"
 			utils.SendTg(msg)
 			utils.SendPd(msg)
 			utils.SendSl(msg)
@@ -73,7 +73,7 @@ func (app *BaseApp) checkEL(ctx context.Context, jsonrpc string) error {
 		if store.GlobalState.ELs[jsonrpc].CurrentHeight == height {
 			store.GlobalState.ELs[jsonrpc].Status = false
 
-			msg := "Monad Height is not increasing"
+			msg := "Story Height is not increasing"
 			utils.SendTg(msg)
 			utils.SendPd(msg)
 			utils.SendSl(msg)
